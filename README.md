@@ -1,4 +1,4 @@
-<h1 align="left">[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&pause=499&color=31ABE1&random=false&width=500&lines=Hey+there...;My+name+is+Erick+Wainaina%2C+;%2CA+software+Engineer;From+Nairobi%2C+Kenya;Happy+to+meet+you+soon.)](https://git.io/typing-svg)</h1>
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&pause=499&color=31ABE1&random=false&width=500&lines=Hey+there...;My+name+is+Erick+Wainaina%2C+;%2CA+software+Engineer;From+Nairobi%2C+Kenya;Happy+to+meet+you+soon.)](https://git.io/typing-svg)
 
 ###
 
