@@ -8,7 +8,7 @@
 
 ###
 
-<p align="left">✨ Creating bugs since 27th/10/2022<br>📚 I'm currently learning React & Ts<br>🎯 Goals: I aspire to grow in my passion in becoming a proficient software engineer ε, as am writing this am 20yrs old (27th/10/2023)🤲🏽.<br>🎲 Fun fact: I love solving problems that engage the mind🧠🦾, always open minded, I a big fan of The Flash ⚡series 😀😎💯</p>
+<p align="left">✨ Creating bugs since 27th/10/2022<br>📚 I'm currently learning React, Ts & Django<br>🎯 Goals: I aspire to grow in my passion in becoming a proficient software engineer ε, as am writing this am 20yrs old (27th/10/2023)🤲🏽.<br>🎲 Fun fact: I love solving problems that engage the mind🧠🦾, always open minded, I a big fan of The Flash ⚡series 😀😎💯</p>
 
 ###
 
