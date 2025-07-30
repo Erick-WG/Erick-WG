@@ -4,28 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erick Gitahi</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
 
     <script src="/assets/js/index.js" defer></script>
 </head>
-<body>
+<body class="light">
     <header>
-        <h1>Erick-WG</h1>
-        <nav>
-            <ul>
-                <li><a href="/index.html">About Me</a></li>
+        <h1 class="logo">Erick-WG</h1>
+
+        <!-- Desktop Nav -->
+        <nav class="desktop-nav">
+            <ul class="nav-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/index.html#profile">About Me</a></li>
                 <li><a href="/index.html#projects">My Projects</a></li>
-                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Nav -->
+        <div class="menu" id="menu">
+            <span class="humberger-menu"></span>
+            <span class="humberger-menu"></span>
+            <span class="humberger-menu"></span>
+        </div>
+        <nav class="mobile-nav" id="mobile-nav">
+            <ul class="nav-links" id="nav-links">
+                <li><a href="" class="close" id="close">X</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/index.html#profile">About Me</a></li>
+                <li><a href="/index.html#projects">My Projects</a></li>
+                <li><a href="/contact.html">Contact Me</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero" id="profile">
             <div class="hero-image">
-                <img src="/assets/images/profile.jpg" alt="Profile Picture" class="profile-picture">
+                <img src="/assets/images/profile__25th-10-2024_-removebg-preview.png" alt="Profile Picture" class="profile-picture">
             </div>
             <div class="hero-text">
+                <h1>Erick Wainaina Gitahi</h1>
                 <h2>Frontend Engineer | Software Developer.</h2>
 
                 <p>Hello, My name is Erick Wainaina, I'm a Front-End Developer I leverage modern web frameworks and technologies in creating responsive, user-centered web applications. My work focuses on transforming designs into seamless, high-performance interfaces, always aiming for an intuitive user experience. Moving forward, I'm excited to deepen my expertise in front-end technologies while working on innovative projects that push the boundaries of user engagement and design.</p>
@@ -36,60 +56,96 @@
             </div>
         </section>
 
-        <section class="projects" id="projects">
+        <section class="projects-container" id="projects-container">
             <h2>Projects I've Worked On.</h2>
             <div class="projects">
                 <div class="project">
-                    <div class="title">
-                        <div class="top"></div>
-                        <div class="description"></div>
-                        <div class="tech">
-                            <ul class="tech-stack">
-                                <li class="tech-icon"><img src="" alt=""></li>
-                                <li class="tech-icon"><img src="" alt=""></li>
-                            </ul>
-                            <div class="links">
-                                <ul>
-                                    <li><a href="#">Project Link</a></li>
-                                    <li><a href="#">GitHub Link</a></li>
-                                </ul>
+                    <div class="top">
+                        <h3>Project Title</h3>
+                        <div class="time-line">
+                            <span class="start-date">Start Date /</span>
+                            <span class="end-date">End Date</span>
+                            <h4>Feb/2025 - Dec/2025</h4>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi debitis, quisquam veritatis molestiae mollitia numquam officia rerum quasi maxime obcaecati omnis consequatur cum optio facere nemo non deleniti dolorum quod.
+                        Maiores quod animi, quis natus quidem inventore corporis explicabo qui est esse. Natus vitae nam veritatis est quis nisi enim assumenda dolor incidunt reiciendis, rerum adipisci pariatur voluptatem maxime quia.
+                        Corrupti voluptas dicta sit possimus soluta, culpa non voluptates obcaecati facere ad similique harum, est sed ut laboriosam incidunt exercitationem deleniti eligendi? Reprehenderit reiciendis ratione, sit dolor eius consectetur aperiam.</p>
+                    </div>
+                    <div class="tech">
+                        <div class="tech-stack-container">
+                            <h4 class="tech-title">Tech-stack Used</h4>
+                            <div class="tech-stack">
+                                <li class="tech-icon"><img src="/assets/images/react.svg" alt=""></li>
+                                <li class="tech-icon"><img src="/assets/images/react.svg" alt=""></li>
+                                <li class="tech-icon"><img src="/assets/images/react.svg" alt=""></li>
+                                <li class="tech-icon"><img src="/assets/images/react.svg" alt=""></li>
                             </div>
+                        </div>
+                        <div class="links">
+                            <ul>
+                                <li><a href="#">Project Link</a></li>
+                                <li><a href="#">GitHub Link</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
                 <div class="project">
-                    <div class="title">
-                        <div class="top"></div>
-                        <div class="description"></div>
-                        <div class="tech">
-                            <ul class="tech-stack">
-                                <li class="tech-icon"><img src="" alt=""></li>
-                                <li class="tech-icon"><img src="" alt=""></li>
+                    <div class="top">
+                        <h3>Project Title</h3>
+                        <div class="time-line">
+                            <span class="start-date">Start Date /</span>
+                            <span class="end-date">End Date</span>
+                            <h4>Feb/2025 - Dec/2025</h4>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi debitis, quisquam veritatis molestiae mollitia numquam officia rerum quasi maxime obcaecati omnis consequatur cum optio facere nemo non deleniti dolorum quod.
+                        Maiores quod animi, quis natus quidem inventore corporis explicabo qui est esse. Natus vitae nam veritatis est quis nisi enim assumenda dolor incidunt reiciendis, rerum adipisci pariatur voluptatem maxime quia.
+                        Corrupti voluptas dicta sit possimus soluta, culpa non voluptates obcaecati facere ad similique harum, est sed ut laboriosam incidunt exercitationem deleniti eligendi? Reprehenderit reiciendis ratione, sit dolor eius consectetur aperiam.</p>
+                    </div>
+                    <div class="tech">
+                        <ul class="tech-stack">
+                            <li class="tech-icon"><img src="/assets/images/react.svg" alt=""></li>
+                            <li class="tech-icon"><img src="/assets/images/react.svg" alt=""></li>
+                            <li class="tech-icon"><img src="/assets/images/react.svg" alt=""></li>
+                            <li class="tech-icon"><img src="/assets/images/react.svg" alt=""></li>
+                        </ul>
+                        <div class="links">
+                            <ul>
+                                <li><a href="#">Project Link</a></li>
+                                <li><a href="#">GitHub Link</a></li>
                             </ul>
-                            <div class="links">
-                                <ul>
-                                    <li><a href="#">Project Link</a></li>
-                                    <li><a href="#">GitHub Link</a></li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="project">
-                    <div class="title">
-                        <div class="top"></div>
-                        <div class="description"></div>
-                        <div class="tech">
-                            <ul class="tech-stack">
-                                <li class="tech-icon"><img src="" alt=""></li>
-                                <li class="tech-icon"><img src="" alt=""></li>
+                    <div class="top">
+                        <h3>Project Title</h3>
+                        <div class="time-line">
+                            <span class="start-date">Start Date /</span>
+                            <span class="end-date">End Date</span>
+                            <h4>Feb/2025 - Dec/2025</h4>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi debitis, quisquam veritatis molestiae mollitia numquam officia rerum quasi maxime obcaecati omnis consequatur cum optio facere nemo non deleniti dolorum quod.
+                        Maiores quod animi, quis natus quidem inventore corporis explicabo qui est esse. Natus vitae nam veritatis est quis nisi enim assumenda dolor incidunt reiciendis, rerum adipisci pariatur voluptatem maxime quia.
+                        Corrupti voluptas dicta sit possimus soluta, culpa non voluptates obcaecati facere ad similique harum, est sed ut laboriosam incidunt exercitationem deleniti eligendi? Reprehenderit reiciendis ratione, sit dolor eius consectetur aperiam.</p>
+                    </div>
+                    <div class="tech">
+                        <ul class="tech-stack">
+                            <li class="tech-icon"><img src="/assets/images/react.svg" alt=""></li>
+                            <li class="tech-icon"><img src="/assets/images/react.svg" alt=""></li>
+                            <li class="tech-icon"><img src="/assets/images/react.svg" alt=""></li>
+                            <li class="tech-icon"><img src="/assets/images/react.svg" alt=""></li>
+                        </ul>
+                        <div class="links">
+                            <ul>
+                                <li><a href="#">Project Link</a></li>
+                                <li><a href="#">GitHub Link</a></li>
                             </ul>
-                            <div class="links">
-                                <ul>
-                                    <li><a href="#">Project Link</a></li>
-                                    <li><a href="#">GitHub Link</a></li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -164,7 +220,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2023 My Web Page</p>
+        <p>&copy; 2025 Erick WG</p>
     </footer>
 </body>
 </html>
