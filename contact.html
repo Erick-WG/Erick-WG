@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Erick Gitahi</title>
+    <link rel="stylesheet" href="/assets/css/index.css">
+
+    <script src="/assets/js/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Erick-WG</h1>
+
+        <!-- Desktop Nav -->
+        <nav class="desktop-nav">
+            <ul class="nav-links">
+                <li><a href="/index.html#profile">About Me</a></li>
+                <li><a href="/index.html#projects">My Projects</a></li>
+                <li><a href="/contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Nav -->
+        <div class="menu" id="menu">
+            <span class="humberger-menu"></span>
+            <span class="humberger-menu"></span>
+            <span class="humberger-menu"></span>
+        </div>
+        <nav class="mobile-nav" id="mobile-nav">
+            <ul class="nav-links" id="nav-links">
+                <li><a href="" class="close" id="close">X</a></li>
+                <li><a href="/index.html#profile">About Me</a></li>
+                <li><a href="/index.html#projects">My Projects</a></li>
+                <li><a href="/contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contact Me</h2>
+            <p>If you would like to get in touch, please fill out the form below:</p>
+            <form action="/submit_contact" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Erick WG</p>
+    </footer>
+</body>
+</html>
