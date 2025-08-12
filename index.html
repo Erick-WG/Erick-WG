@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erick Gitahi</title>
     <link rel="stylesheet" href="./assets/css/index.css">
-
+    
+    <script src="https://kit.fontawesome.com/1bdfc5c68a.js" crossorigin="anonymous"></script>
     <script src="./assets/js/index.js" defer></script>
 </head>
 <body class="light">
@@ -16,9 +17,9 @@
         <nav class="desktop-nav">
             <ul class="nav-links">
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="./index.html#profile">About Me</a></li>
-                <li><a href="./index.html#projects">My Projects</a></li>
-                <li><a href="./contact.html">Contact Me</a></li>
+                <li><a href="./index.html#profile">About</a></li>
+                <li><a href="./index.html#projects">Projects</a></li>
+                <li><a href="./contact.html" class="contact-button">Contact Me</a></li>
             </ul>
         </nav>
 
@@ -31,10 +32,10 @@
         <nav class="mobile-nav" id="mobile-nav">
             <ul class="nav-links" id="nav-links">
                 <li><a href="" class="close" id="close">X</a></li>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./index.html#profile">About Me</a></li>
-                <li><a href="./index.html#projects">My Projects</a></li>
-                <li><a href="./contact.html">Contact Me</a></li>
+                <li><i class="fas fa-home fa-s"></i> <a href="./index.html">Home</a></li>
+                <li><i class="fas fa-user fa-s"></i> <a href="./index.html#profile">About</a></li>
+                <li><i class="fas fa-tools fa-s"></i> <a href="./index.html#projects">Projects</a></li>
+                <li><i class="fas fa-phone fa-s"></i> <a href="./contact.html">Contact Me</a></li>
             </ul>
         </nav>
     </header>
@@ -59,160 +60,162 @@
         <section class="projects-container" id="projects-container">
             <h2>Projects I've Worked On.</h2>
             <div class="projects">
-                <div class="project">
-                    <div class="top">
-                        <h3>Project Title</h3>
-                        <div class="time-line">
-                            <span class="start-date">Start Date /</span>
-                            <span class="end-date">End Date</span>
-                            <h4>Feb/2025 - Dec/2025</h4>
-                        </div>
-                    </div>
-                    <div class="description">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi debitis, quisquam veritatis molestiae mollitia numquam officia rerum quasi maxime obcaecati omnis consequatur cum optio facere nemo non deleniti dolorum quod.
-                        Maiores quod animi, quis natus quidem inventore corporis explicabo qui est esse. Natus vitae nam veritatis est quis nisi enim assumenda dolor incidunt reiciendis, rerum adipisci pariatur voluptatem maxime quia.
-                        Corrupti voluptas dicta sit possimus soluta, culpa non voluptates obcaecati facere ad similique harum, est sed ut laboriosam incidunt exercitationem deleniti eligendi? Reprehenderit reiciendis ratione, sit dolor eius consectetur aperiam.</p>
-                    </div>
-                    <div class="tech">
-                        <div class="tech-stack-container">
-                            <h4 class="tech-title">Tech-stack Used</h4>
-                            <div class="tech-stack">
-                                <li class="tech-icon"><img src="/assets/images/react.svg" alt=""></li>
-                                <li class="tech-icon"><img src="/assets/images/react.svg" alt=""></li>
-                                <li class="tech-icon"><img src="/assets/images/react.svg" alt=""></li>
-                                <li class="tech-icon"><img src="/assets/images/react.svg" alt=""></li>
-                            </div>
-                        </div>
-                        <div class="links">
-                            <ul>
-                                <li><a href="#">Project Link</a></li>
-                                <li><a href="#">GitHub Link</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="top">
-                        <h3>Project Title</h3>
-                        <div class="time-line">
-                            <span class="start-date">Start Date /</span>
-                            <span class="end-date">End Date</span>
-                            <h4>Feb/2025 - Dec/2025</h4>
-                        </div>
-                    </div>
-                    <div class="description">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi debitis, quisquam veritatis molestiae mollitia numquam officia rerum quasi maxime obcaecati omnis consequatur cum optio facere nemo non deleniti dolorum quod.
-                        Maiores quod animi, quis natus quidem inventore corporis explicabo qui est esse. Natus vitae nam veritatis est quis nisi enim assumenda dolor incidunt reiciendis, rerum adipisci pariatur voluptatem maxime quia.
-                        Corrupti voluptas dicta sit possimus soluta, culpa non voluptates obcaecati facere ad similique harum, est sed ut laboriosam incidunt exercitationem deleniti eligendi? Reprehenderit reiciendis ratione, sit dolor eius consectetur aperiam.</p>
-                    </div>
-                    <div class="tech">
-                        <ul class="tech-stack">
-                            <li class="tech-icon"><img src="/assets/images/react.svg" alt=""></li>
-                            <li class="tech-icon"><img src="/assets/images/react.svg" alt=""></li>
-                            <li class="tech-icon"><img src="/assets/images/react.svg" alt=""></li>
-                            <li class="tech-icon"><img src="/assets/images/react.svg" alt=""></li>
-                        </ul>
-                        <div class="links">
-                            <ul>
-                                <li><a href="#">Project Link</a></li>
-                                <li><a href="#">GitHub Link</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="top">
-                        <h3>Project Title</h3>
-                        <div class="time-line">
-                            <span class="start-date">Start Date /</span>
-                            <span class="end-date">End Date</span>
-                            <h4>Feb/2025 - Dec/2025</h4>
-                        </div>
-                    </div>
-                    <div class="description">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi debitis, quisquam veritatis molestiae mollitia numquam officia rerum quasi maxime obcaecati omnis consequatur cum optio facere nemo non deleniti dolorum quod.
-                        Maiores quod animi, quis natus quidem inventore corporis explicabo qui est esse. Natus vitae nam veritatis est quis nisi enim assumenda dolor incidunt reiciendis, rerum adipisci pariatur voluptatem maxime quia.
-                        Corrupti voluptas dicta sit possimus soluta, culpa non voluptates obcaecati facere ad similique harum, est sed ut laboriosam incidunt exercitationem deleniti eligendi? Reprehenderit reiciendis ratione, sit dolor eius consectetur aperiam.</p>
-                    </div>
-                    <div class="tech">
-                        <ul class="tech-stack">
-                            <li class="tech-icon"><img src="/assets/images/react.svg" alt=""></li>
-                            <li class="tech-icon"><img src="/assets/images/react.svg" alt=""></li>
-                            <li class="tech-icon"><img src="/assets/images/react.svg" alt=""></li>
-                            <li class="tech-icon"><img src="/assets/images/react.svg" alt=""></li>
-                        </ul>
-                        <div class="links">
-                            <ul>
-                                <li><a href="#">Project Link</a></li>
-                                <li><a href="#">GitHub Link</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                <!-- Dynamically appended by js. -->
             </div>
         </section>
         <section class="skills">
             <h2>Skills & Technologies.</h2>
             <ul class="skills-list">
-                <li class="skill">HTML</li>
-                <li class="skill">CSS</li>
-                <li class="skill">JavaScript</li>
-                <li class="skill">React</li>
-                <li class="skill">Git</li>
-                <li class="skill">Responsive Design</li>
-                <li class="skill">Web Accessibility</li>
-                <li class="skill">Performance Optimization</li>
-                <li class="skill">Cross-Browser Compatibility</li>
-                <li class="skill">Accessibility (a11y)</li>
-                <li class="skill">Internationalization (i18n)</li>
-                <li class="skill">Web Performance</li>
-                <li class="skill">Progressive Enhancement</li>
-                <li class="skill">Mobile-First Design</li>
-                <li class="skill">Cross-Platform Development</li>
-                <li class="skill">UI/UX Design</li>
-                <li class="skill">Agile Methodologies</li>
-                <li class="skill">RESTful APIs</li>
-                <li class="skill">Version Control</li>
-                <li class="skill">Testing & Debugging</li>
-                <li class="skill">TypeScript</li>
-                <li class="skill">Tailwind CSS</li>
-                <li class="skill">Bootstrap</li>
-                <li class="skill">Sass</li>
-                <li class="skill">Webpack</li>
-                <li class="skill">Figma</li>
-                <li class="skill">SEO</li>
-                <li class="skill">Content Management Systems (CMS)</li>
-                <li class="skill">Progressive Web Apps (PWA)</li>
-                <li class="skill">Redux</li>
-                <li class="skill">Jest</li>
-                <li class="skill">Webpack</li>
-                <li class="skill">Vite</li>
-                <li class="skill">ESLint</li>
-                <li class="skill">Prettier</li>
-                <li class="skill">Code Review</li>
-                <li class="skill">Continuous Integration/Continuous Deployment (CI/CD)</li>
-                <li class="skill">API Integration</li>
-                <li class="skill">State Management</li>
-                <li class="skill">Micro Frontends</li>
-                <li class="skill">Graphical User Interface (GUI) Design</li>
-                <li class="skill">Command Line Interface (CLI) Tools</li>
-                <li class="skill">Cloud Services (AWS, Azure, GCP)</li>
-                <li class="skill">Containerization (Docker)</li>
+                <li class="skill" title="HTML5">
+                    <i class="fa-brands fa-html5 fa-4x"></i>
+                </li>
+                <li class="skill" title="CSS">
+                    <i class="fa-brands fa-css3-alt fa-4x"></i>
+                </li>
+                <li class="skill" title="JavaScript">
+                    <i class="fa-brands fa-js fa-4x"></i>
+                </li>
+                <li class="skill" title="React">
+                    <i class="fa-brands fa-react fa-4x"></i>
+                </li>
+                <li class="skill" title="Git">
+                    <i class="fa-brands fa-git fa-4x"></i>
+                </li>
+                <li class="skill" title="GitHub">
+                    <i class="fa-brands fa-github fa-4x"></i>
+                </li>
+                <li class="skill" title="Responsive Design">
+                    <i class="fas fa-desktop fa-4x"></i>
+                </li>
+                <li class="skill" title="Web Accessibility">
+                    <i class="fas fa-universal-access fa-4x"></i>
+                </li>
+                <li class="skill" title="Performance Optimization">
+                    <i class="fas fa-tachometer-alt fa-4x"></i>
+                </li>
+                <li class="skill" title="Cross-Browser Compatibility">
+                    <i class="fas fa-globe fa-4x"></i>
+                </li>
+                 <li class="skill" title="Accessibility (a11y)">
+                    <i class="fas fa-wheelchair fa-4x"></i>
+                </li>
+                <li class="skill" title="Internationalization (i18n)">
+                    <i class="fas fa-language fa-4x"></i>
+                </li>
+                <li class="skill" title="Web Performance">
+                    <i class="fas fa-chart-line fa-4x"></i>
+                </li>
+                <li class="skill" title="Progressive Enhancement">
+                    <i class="fas fa-plus-square fa-4x"></i>
+                </li>
+                <li class="skill" title="Mobile-First Design">
+                    <i class="fas fa-mobile-alt fa-4x"></i>
+                </li>
+                <li class="skill" title="Cross-Platform Development">
+                    <i class="fas fa-code-branch fa-4x"></i>
+                </li>
+                <li class="skill" title="UI/UX Design">
+                    <i class="fas fa-edit fa-4x"></i>
+                </li>
+                <li class="skill" title="Agile Methodologies">
+                    <i class="fas fa-tasks fa-4x"></i>
+                </li>
+                <li class="skill" title="RESTful APIs">
+                    <i class="fas fa-exchange-alt fa-4x"></i>
+                </li>
+                <li class="skill" title="Version Control">
+                    <i class="fas fa-code-branch fa-4x"></i>
+                </li>
+                <li class="skill" title="Testing & Debugging">
+                    <i class="fas fa-bug fa-4x"></i>
+                </li>
+                <li class="skill" title="TypeScript">
+                    <i class="fas fa-file-code fa-4x"></i>
+                </li>
+                <li class="skill" title="Tailwind CSS">
+                    <i class="fa-solid fa-wind fa-4x"></i>
+                </li>
+                <li class="skill" title="Bootstrap">
+                    <i class="fa-brands fa-bootstrap fa-4x"></i>
+                </li>
+                <li class="skill" title="Sass">
+                    <i class="fa-brands fa-sass fa-4x"></i>
+                </li>
+                <li class="skill" title="Webpack">
+                    <i class="fas fa-boxes fa-4x"></i>
+                </li>
+                <li class="skill" title="Figma">
+                    <i class="fa-brands fa-figma fa-4x"></i>
+                </li>
+                <li class="skill" title="SEO">
+                    <i class="fas fa-search fa-4x"></i>
+                </li>
+                <li class="skill" title="Content Management Systems (CMS)">
+                    <i class="fas fa-newspaper fa-4x"></i>
+                </li>
+                <li class="skill" title="Progressive Web Apps (PWA)">
+                    <i class="fas fa-rocket fa-4x"></i>
+                </li>
+                <li class="skill" title="Redux">
+                    <i class="fas fa-retweet fa-4x"></i>
+                </li>
+                <li class="skill" title="Jest">
+                    <i class="fas fa-check-double fa-4x"></i>
+                </li>
+                <li class="skill" title="Webpack">
+                    <i class="fas fa-boxes fa-4x"></i>
+                </li>
+                <li class="skill" title="Vite">
+                    <i class="fas fa-bolt fa-4x"></i>
+                </li>
+                <li class="skill" title="ESLint">
+                    <i class="fas fa-check-circle fa-4x"></i>
+                </li>
+                <li class="skill" title="Prettier">
+                    <i class="fas fa-heart fa-4x"></i>
+                </li>
+                <li class="skill" title="Code Review">
+                    <i class="fas fa-code fa-4x"></i>
+                </li>
+                <li class="skill" title="Continuous Integration/Continuous Deployment (CI/CD)">
+                    <i class="fas fa-sync-alt fa-4x"></i>
+                </li>
+                <li class="skill" title="API Integration">
+                    <i class="fas fa-link fa-4x"></i>
+                </li>
+                <li class="skill" title="State Management">
+                    <i class="fas fa-cubes fa-4x"></i>
+                </li>
+                <li class="skill" title="Micro Frontends">
+                    <i class="fas fa-puzzle-piece fa-4x"></i>
+                </li>
+                <li class="skill" title="Graphical User Interface (GUI) Design">
+                    <i class="fas fa-desktop fa-4x"></i>
+                </li>
+                <li class="skill" title="Command Line Interface (CLI) Tools">
+                    <i class="fas fa-terminal fa-4x"></i>
+                </li>
+                <li class="skill" title="Cloud Services (AWS, Azure, GCP)">
+                    <i class="fas fa-cloud fa-4x"></i>
+                </li>
+                <li class="skill" title="Containerization (Docker)">
+                    <i class="fa-brands fa-docker fa-4x"></i>
+                </li>
             </ul>
         </section>
         <section class="education">
             <div class="school">
-                <div class="title-achieved"></div>
+                <div class="title-achieved">Certified Frontend Engineer</div>
                 <div class="description"></div>
                 <div class="certification"><a href="">Certificate of Achievement</a></div>
             </div>
             <div class="school">
-                <div class="title-achieved"></div>
+                <div class="title-achieved">Certified Software Engineer.</div>
                 <div class="description"></div>
                 <div class="certification"><a href="">Certificate of Achievement</a></div>
             </div>
             <div class="school">
-                <div class="title-achieved"></div>
+                <div class="title-achieved">Certified Ai Expert.</div>
                 <div class="description"></div>
                 <div class="certification"><a href="">Certificate of Achievement</a></div>
             </div>
@@ -220,6 +223,23 @@
     </main>
 
     <footer>
+        <div class="footer-main">
+            <div class="brand">
+                <h2 class="logo" >Erick-WG</h2>
+                <p class="tagline">
+                    "From concept to code, with precision."
+                </p>
+            </div>
+            <div class="footer-nav">
+                <ul class="footer-links">
+                    <li><a href="./">Home</a></li>
+                    <li><a href="./index.html#profile">About</a></li>
+                    <li><a href="./index.html#projects">Projects</a></li>
+                    <li><a href="./contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
         <p>&copy; 2025 Erick WG</p>
     </footer>
 </body>

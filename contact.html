@@ -38,18 +38,26 @@
     </header>
 
     <main>
-        <section>
-            <h2>Contact Me</h2>
-            <p>If you would like to get in touch, please fill out the form below:</p>
+        <section class="contact-form-container">
+            <div class="title">
+                <h2>Contact Me</h2>
+                <p>If you would like to get in touch, please fill out the form below:</p>
+            </div>
             <form action="/submit_contact" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <div>
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <div>
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
+                <div>
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
 
                 <button type="submit">Send Message</button>
             </form>
@@ -57,6 +65,23 @@
     </main>
 
     <footer>
+        <div class="footer-main">
+            <div class="brand">
+                <h2 class="logo" >Erick-WG</h2>
+                <p class="tagline">
+                    "From concept to code, with precision."
+                </p>
+            </div>
+            <div class="footer-nav">
+                <ul class="footer-links">
+                    <li><a href="./">Home</a></li>
+                    <li><a href="./index.html#profile">About</a></li>
+                    <li><a href="./index.html#projects">Projects</a></li>
+                    <li><a href="./contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
         <p>&copy; 2025 Erick WG</p>
     </footer>
 </body>
