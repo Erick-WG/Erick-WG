@@ -729,8 +729,8 @@ footer p {
 
 
 
-/*! Contact Page */
-.contact-form-container {
+/* ! Contact Page */
+/* .contact-form-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -796,4 +796,4 @@ form button {
 
 form button:hover {
     background-color: var(--secondary-color);
-}
+} */
