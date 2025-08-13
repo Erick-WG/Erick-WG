@@ -82,32 +82,47 @@ const data = fetch('/assets/js/db.json')
         });
     })
 
-    // <div class="project">
-    //     <div class="top">
-    //         <h3>Project Title</h3>
-    //         <div class="time-line">
-    //             <span class="start-date">Start Date /</span>
-    //             <span class="end-date">End Date</span>
-    //             <h4>Feb/2025 - Dec/2025</h4>
-    //         </div>
-    //     </div>
-    //     <div class="description">
-    //         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi debitis, quisquam veritatis molestiae mollitia numquam officia rerum quasi maxime obcaecati omnis consequatur cum optio facere nemo non deleniti dolorum quod.
-    //         Maiores quod animi, quis natus quidem inventore corporis explicabo qui est esse. Natus vitae nam veritatis est quis nisi enim assumenda dolor incidunt reiciendis, rerum adipisci pariatur voluptatem maxime quia.
-    //         Corrupti voluptas dicta sit possimus soluta, culpa non voluptates obcaecati facere ad similique harum, est sed ut laboriosam incidunt exercitationem deleniti eligendi? Reprehenderit reiciendis ratione, sit dolor eius consectetur aperiam.</p>
-    //     </div>
-    //     <div class="tech">
-    //         <ul class="tech-stack">
-    //             <li class="tech-icon"><img src="/assets/images/react.svg" alt=""></li>
-    //             <li class="tech-icon"><img src="/assets/images/react.svg" alt=""></li>
-    //             <li class="tech-icon"><img src="/assets/images/react.svg" alt=""></li>
-    //             <li class="tech-icon"><img src="/assets/images/react.svg" alt=""></li>
-    //         </ul>
-    //         <div class="links">
-    //             <ul>
-    //                 <li><a href="#">Project Link</a></li>
-    //                 <li><a href="#">GitHub Link</a></li>
-    //             </ul>
-    //         </div>
-    //     </div>
-    // </div>
+
+
+// Initialize EmailJS after DOM loads
+document.addEventListener('DOMContentLoaded', () => {
+    emailjs.init("afQCuQv-eLc3LlB8f");
+
+    const contactForm = document.getElementById('contact-form');
+    const contactButton = document.getElementById('submit-button');
+
+    contactForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // Set loading state
+        contactButton.classList.add('loading');
+        contactButton.textContent = 'Sending...';
+        contactButton.disabled = true;
+
+        // Send the form data using EmailJS
+        emailjs.sendForm('service_gjfmtqp', 'template_ifr4ido', this)
+            .then(() => {
+                contactButton.classList.remove('loading');
+                contactButton.textContent = 'Sent!';
+                contactForm.reset();
+                
+                // Reset back to default after 3s
+                setTimeout(() => {
+                    contactButton.disabled = false;
+                    contactButton.textContent = 'Send Message';
+                }, 2000);
+            })
+            .catch((error) => {
+                console.error('EmailJS error:', error);
+                contactButton.classList.remove('loading');
+                contactButton.textContent = 'Error! Try Again';
+                
+                // Reset back after 4s
+                setTimeout(() => {
+                    contactButton.disabled = false;
+                    contactButton.textContent = 'Send Message';
+                    contactForm.reset();
+                }, 3000);
+            });
+    });
+});

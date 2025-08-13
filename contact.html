@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q82BJMCFHY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-Q82BJMCFHY');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Erick Gitahi</title>
     <link rel="stylesheet" href="/assets/css/index.css">
 
     <script src="/assets/js/index.js" defer></script>
+    <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
 </head>
 <body>
     <header>
@@ -43,23 +58,23 @@
                 <h2>Contact Me</h2>
                 <p>If you would like to get in touch, please fill out the form below:</p>
             </div>
-            <form action="/submit_contact" method="post">
+            <form id="contact-form">
                 <div>
                     <label for="name">Name *</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" placeholder="First And Last Name" required>
                 </div>
 
                 <div>
                     <label for="email">Email *</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" placeholder="Email Address" required>
                 </div>
 
                 <div>
                     <label for="message">Message *</label>
-                    <textarea id="message" name="message" required></textarea>
+                    <textarea id="message" name="message" placeholder="What would you like us to work on together?" required></textarea>
                 </div>
 
-                <button type="submit">Send Message</button>
+                <button id="submit-button" type="submit">Send Message</button>
             </form>
         </section>
     </main>
