@@ -775,6 +775,10 @@ form input, form textarea {
     font-size: 1rem;
 }
 
+form textarea {
+    min-height: 150px;
+}
+
 form input:focus, form textarea:focus{
     border-color: var(--secondary-color);
     outline: none;
