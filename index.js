@@ -69,7 +69,7 @@ const data = fetch('./db.json')
                     </ul>
                     <div class="links">
                         <ul>
-                            ${project.link != null ? 
+                            ${project.link != null ?
                                 `<li><a href="${project.link}" target="_blank">Project Link</a></li>` : ''
                             }
                             <li><a href="${project.github}" target="_blank">GitHub Link</a></li>
