@@ -42,7 +42,7 @@ closeNav.addEventListener('click', () => {
 
 
 // fetching data from db.json
-const data = fetch('/assets/js/db.json')
+const data = fetch('./db.json')
     .then(response => response.json())
     .then(data => {
         const projectsContainer = document.querySelector('.projects');
