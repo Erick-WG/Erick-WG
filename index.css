@@ -11,7 +11,7 @@
 :root {
     --primary-color: hsl(226, 87%, 33%);
     --secondary-color: hsl(226, 84%, 48%);
-    --light-bg-color: hsla(0, 0%, 100%, 0.89);
+    --light-bg-color: hsla(0, 0%, 100%, 1);
     --light-text-color: hsl(0, 0%, 20%);
     --dark-bg-color: hsl(0, 0%, 20%);
     --dark-text-color: hsla(0, 0%, 100%, 0.89);
@@ -108,8 +108,9 @@ header h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: fit-content;
     background-color: var(--light-bg-color);
-    padding: 0 20px 50px;
+    padding: 20px;
 }
 
 .projects-container h2 {
@@ -206,10 +207,13 @@ section.skills{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 20px;
+    padding: 50px 20px;
+    gap: 20px;
+    background-color: var(--transparent-overlay);
 }
 
 .skills-list {
+    max-width: 900px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
