@@ -804,3 +804,8 @@ form button {
 form button:hover {
     background-color: var(--secondary-color);
 }
+
+.submit-btn.loading {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
