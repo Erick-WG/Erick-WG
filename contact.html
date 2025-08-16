@@ -14,7 +14,6 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Erick Gitahi</title>
     <link rel="stylesheet" href="./index.css">
 
     <script src="./index.js" defer></script>
@@ -23,93 +22,55 @@
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
 
-    <!-- base url -->
-    <!-- <base href="/Erick-WG/"> -->
+    <!-- EmailJs client. -->
+    <script>
+        (function() {
+            // Initializing EmailJS
+            emailjs.init("afQCuQv-eLc3LlB8f");
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            const contactForm = document.getElementById('contact-form');
+            const contactButton = document.getElementById('submit-button');
 
-<!-- 
+            contactForm.addEventListener('submit', function(event) {
+                event.preventDefault();
 
+                // Set loading state
+                contactButton.classList.add('loading');
+                contactButton.textContent = 'Sending...';
+                contactButton.disabled = true;
 
-    <style>
-        /*! Contact Page */
-        .contact-form-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 0 20px;
-            margin: 0 0 50px;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_gjfmtqp', 'template_ifr4ido', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                        contactButton.classList.remove('loading');
+                        contactButton.textContent = 'Sent!';
+                        contactForm.reset();
+
+                        // Reset back to default after 3s
+                        setTimeout(() => {
+                            contactButton.disabled = false;
+                            contactButton.textContent = 'Send Message';
+                        }, 2000);
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                        contactButton.classList.remove('loading');
+                        contactButton.textContent = 'Error! Try Again';
+
+                        // Reset back after 4s
+                        setTimeout(() => {
+                            contactButton.disabled = false;
+                            contactButton.textContent = 'Send Message';
+                            contactForm.reset();
+                        }, 3000);
+                    });
+            });
         }
-
-        .title {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .title h2 {
-            font-size: 1.5rem;
-            color: var(--secondary-color);
-        }
-
-        .title p {
-            font-size: 1rem;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-            width: 100%;
-            max-width: 600px;
-        }
-
-        form div {
-            width: 100%;
-        }
-
-        form input, form textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid var(--border-color);
-            border-radius: 5px;
-            font-size: 1rem;
-        }
-
-        form textarea {
-            min-height: 150px;
-        }
-
-        form input:focus, form textarea:focus{
-            border-color: var(--secondary-color);
-            outline: none;
-        }
-
-        form button {
-            padding: 10px 20px;
-            background-color: var(--primary-color);
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        form button:hover {
-            background-color: var(--secondary-color);
-        }
-        form.loading button {
-            background-color: var(--loading-color);
-            cursor: not-allowed;
-        }
-
-    </style>
-
-
-
- -->
-
-
+    </script>
+    <title>Contact Erick Gitahi</title>
 </head>
 <body>
     <header>
@@ -118,7 +79,7 @@
         <!-- Desktop Nav -->
         <nav class="desktop-nav">
             <ul class="nav-links">
-                <li><a href="./index.html#profile">About Me</a></li>
+                <li><a href="./index.html">About Me</a></li>
                 <li><a href="./index.html#projects">My Projects</a></li>
                 <li><a href="./contact.html">Contact Me</a></li>
             </ul>
@@ -133,7 +94,7 @@
         <nav class="mobile-nav" id="mobile-nav">
             <ul class="nav-links" id="nav-links">
                 <li><a href="" class="close" id="close">X</a></li>
-                <li><a href="./index.html#profile">About Me</a></li>
+                <li><a href="./index.html">About Me</a></li>
                 <li><a href="./index.html#projects">My Projects</a></li>
                 <li><a href="./contact.html">Contact Me</a></li>
             </ul>
@@ -162,7 +123,7 @@
                     <textarea id="message" name="message" placeholder="What would you like us to work on together?" required></textarea>
                 </div>
 
-                <button id="submit-button" type="submit">Send Message</button>
+                <button class="submit-btn" id="submit-button" type="submit">Send Message</button>
             </form>
         </section>
     </main>

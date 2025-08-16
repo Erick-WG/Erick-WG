@@ -1,5 +1,6 @@
 // Auto set theme based on system preference
 document.addEventListener('DOMContentLoaded', () => {
+    // check if the user wants dark mode or light mode
     const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
     const body = document.body;
 
@@ -151,46 +152,3 @@ const displayData = (data) => {
 // calling the function to display data
 displayData(data);
 
-
-// Initialize EmailJS after DOM loads
-document.addEventListener('DOMContentLoaded', () => {
-    emailjs.init("afQCuQv-eLc3LlB8f");
-
-    const contactForm = document.getElementById('contact-form');
-    const contactButton = document.getElementById('submit-button');
-
-    contactForm.addEventListener('submit', function(event) {
-        event.preventDefault();
-
-        // Set loading state
-        contactButton.classList.add('loading');
-        contactButton.textContent = 'Sending...';
-        contactButton.disabled = true;
-
-        // Send the form data using EmailJS
-        emailjs.sendForm('service_gjfmtqp', 'template_ifr4ido', this)
-            .then(() => {
-                contactButton.classList.remove('loading');
-                contactButton.textContent = 'Sent!';
-                contactForm.reset();
-                
-                // Reset back to default after 3s
-                setTimeout(() => {
-                    contactButton.disabled = false;
-                    contactButton.textContent = 'Send Message';
-                }, 2000);
-            })
-            .catch((error) => {
-                console.error('EmailJS error:', error);
-                contactButton.classList.remove('loading');
-                contactButton.textContent = 'Error! Try Again';
-                
-                // Reset back after 4s
-                setTimeout(() => {
-                    contactButton.disabled = false;
-                    contactButton.textContent = 'Send Message';
-                    contactForm.reset();
-                }, 3000);
-            });
-    });
-});
