@@ -105,26 +105,67 @@
         <section class="contact-form-container">
             <div class="title">
                 <h2>Contact Me</h2>
-                <p>If you would like to get in touch, please fill out the form below:</p>
             </div>
-            <form id="contact-form">
-                <div>
-                    <label for="name">Name *</label>
-                    <input type="text" id="name" name="name" placeholder="First And Last Name" required>
+            <div class="contact-details">
+                <!--* Socials and connection point. -->
+                <div class="socials">
+                    <div class="final-comment">
+                        <h3>Let's Connect!</h3>
+                        <p>Thank you for visiting my portfolio!</p>
+                        <p>I'm always open to new opportunities and collaborations.</p>
+                        <p>Whether you have a project in mind or just want to say hello, feel free to reach out!</p>
+                        <p>I'm here to help and would love to hear from you.</p>
+                        <p>Let's connect and create something amazing together!</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/erick-wainaina/" target="_blank" rel="noopener noreferrer" class="social-icon">
+                            <img src="https://cdn.jsdelivr.net/npm/devicon@latest/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+                        </a>
+                        <a href="https://x.com/erick_gitahi" target="_blank" rel="noopener noreferrer" class="social-icon">
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/x.svg" alt="X">
+                        </a>
+                        <a href="https://github.com/Erick-WG" target="_blank" rel="noopener noreferrer" class="social-icon">
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" alt="GitHub">
+                        </a>
+                    </div>
                 </div>
 
-                <div>
-                    <label for="email">Email *</label>
-                    <input type="email" id="email" name="email" placeholder="Email Address" required>
-                </div>
+                <!--* contact form -->
+                <form id="contact-form">
+                    <div class="form-header">
+                        <h3>Send me an Email</h3>
+                        <p>Fill out the form below to send me a message.</p>
+                    </div>
+                    <div class="form-group names">
+                        <div class="name">
+                            <label for="fname">First Name *</label>
+                            <input type="text" id="fname" name="name" placeholder="First Name" required>
+                        </div>
 
-                <div>
-                    <label for="message">Message *</label>
-                    <textarea id="message" name="message" placeholder="What would you like us to work on together?" required></textarea>
-                </div>
+                        <div class="name">
+                            <label for="lname">Last Name *</label>
+                            <input type="text" id="lname" name="name" placeholder="Last Name" required>
+                        </div>
+                    </div>
 
-                <button class="submit-btn" id="submit-button" type="submit">Send Message</button>
-            </form>
+                    <div>
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" placeholder="Email Address" required>
+                    </div>
+
+                    <div>
+                        <label for="contact">Contact no *</label>
+                        <input type="email" id="contact" name="email" placeholder="Contact detail" required>
+                    </div>
+
+                    <div>
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" placeholder="What would you like us to work on together?" required></textarea>
+                    </div>
+
+                    <button class="submit-btn" id="submit-button" type="submit">Send Message</button>
+                </form>
+            </div>
         </section>
     </main>
 
