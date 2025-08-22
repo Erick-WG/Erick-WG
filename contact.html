@@ -35,6 +35,7 @@
         window.onload = function() {
             const contactForm = document.getElementById('contact-form');
             const contactButton = document.getElementById('submit-button');
+            const successMessage = document.querySelector('.success');
 
             contactForm.addEventListener('submit', function(event) {
                 event.preventDefault();
@@ -49,12 +50,16 @@
                     .then(() => {
                         console.log('SUCCESS!');
                         contactButton.classList.remove('loading');
+                        contactForm.classList.add('hidden');
+                        successMessage.classList.remove('hidden');
                         contactButton.textContent = 'Sent!';
                         contactForm.reset();
 
                         // Reset back to default after 3s
                         setTimeout(() => {
                             contactButton.disabled = false;
+                            contactForm.classList.remove('hidden');
+                            contactForm.classList.add('hidden');
                             contactButton.textContent = 'Send Message';
                         }, 2000);
                     }, (error) => {
