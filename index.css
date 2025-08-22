@@ -19,6 +19,7 @@
     --border-color: hsla(0, 0%, 0%, 0.082);
     --transparent-overlay: hsla(0, 0%, 0%, 0.199);
     --transparent-overlay-mobile-nav: rgba(0, 0, 0, 0.3);
+    --success-green: hsl(120, 39%, 54%);
     --font-size: 16px;
 }
 
@@ -933,6 +934,15 @@ form button:hover {
     opacity: 0.6;
 }
 
+
+.success{
+    height: 652px;
+}
+
+.success .success-message{
+    font-size: 1.2rem;
+    color: var(--success-green);
+}
 
 
 /* Contact page responsive design. */

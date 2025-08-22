@@ -48,20 +48,30 @@
                 // these IDs from the previous steps
                 emailjs.sendForm('service_gjfmtqp', 'template_ifr4ido', this)
                     .then(() => {
-                        console.log('SUCCESS!');
                         contactButton.classList.remove('loading');
+
                         contactForm.classList.add('hidden');
                         successMessage.classList.remove('hidden');
-                        contactButton.textContent = 'Sent!';
+
+                        successMessage.style.display = 'flex';
+                        successMessage.style.justifyContent = 'center';
+                        successMessage.style.alignItems = 'center';
+
+
+
                         contactForm.reset();
 
                         // Reset back to default after 3s
                         setTimeout(() => {
                             contactButton.disabled = false;
+
                             contactForm.classList.remove('hidden');
-                            contactForm.classList.add('hidden');
+                            successMessage.classList.add('hidden');
+
+                            successMessage.style.display = 'none';
+
                             contactButton.textContent = 'Send Message';
-                        }, 2000);
+                        }, 1000);
                     }, (error) => {
                         console.log('FAILED...', error);
                         contactButton.classList.remove('loading');
