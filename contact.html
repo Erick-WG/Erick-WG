@@ -16,6 +16,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
 
+    <script src="https://kit.fontawesome.com/1bdfc5c68a.js" crossorigin="anonymous"></script>
+
     <script src="./index.js" defer></script>
     <script
         type="text/javascript"
@@ -94,9 +96,10 @@
         <nav class="mobile-nav" id="mobile-nav">
             <ul class="nav-links" id="nav-links">
                 <li><a href="" class="close" id="close">X</a></li>
-                <li><a href="./index.html">About Me</a></li>
-                <li><a href="./index.html#projects">My Projects</a></li>
-                <li><a href="./contact.html">Contact Me</a></li>
+                <li><i class="fas fa-home fa-s"></i> <a href="./index.html">Home</a></li>
+                <li><i class="fas fa-user fa-s"></i> <a href="./index.html#profile">About</a></li>
+                <li><i class="fas fa-tools fa-s"></i> <a href="./index.html#projects">Projects</a></li>
+                <li><i class="fas fa-phone fa-s"></i> <a href="./contact.html">Contact Me</a></li>
             </ul>
         </nav>
     </header>
@@ -105,15 +108,15 @@
         <section class="contact-form-container">
             <div class="title">
                 <h2>Contact Me</h2>
+                <hr>
             </div>
             <div class="contact-details">
                 <!--* Socials and connection point. -->
                 <div class="socials">
                     <div class="final-comment">
-                        <h3>Let's Connect!</h3>
+                        <h3>Let's Connect</h3>
                         <p>Thank you for visiting my portfolio!</p>
-                        <p>I'm always open to new opportunities and collaborations.</p>
-                        <p>Whether you have a project in mind or just want to say hello, feel free to reach out!</p>
+                        <p>I'm always open to new opportunities and collaborations. Whether you have a project in mind or just want to say hello, feel free to reach out!</p>
                         <p>I'm here to help and would love to hear from you.</p>
                         <p>Let's connect and create something amazing together!</p>
                     </div>
@@ -129,43 +132,47 @@
                         </a>
                     </div>
                 </div>
-
-                <!--* contact form -->
-                <form id="contact-form">
-                    <div class="form-header">
-                        <h3>Send me an Email</h3>
-                        <p>Fill out the form below to send me a message.</p>
-                    </div>
-                    <div class="form-group names">
-                        <div class="name">
-                            <label for="fname">First Name *</label>
-                            <input type="text" id="fname" name="name" placeholder="First Name" required>
+                <div class="form-section">
+                    <!--* contact form -->
+                    <form id="contact-form">
+                        <div class="form-header">
+                            <h3>Send me an Email</h3>
+                            <p>Fill out the form below to send me a message.</p>
                         </div>
-
-                        <div class="name">
-                            <label for="lname">Last Name *</label>
-                            <input type="text" id="lname" name="name" placeholder="Last Name" required>
+                        <div class="form-group names">
+                            <div class="name">
+                                <label for="fname">First Name *</label>
+                                <input type="text" id="fname" name="name" placeholder="First Name" required>
+                            </div>
+    
+                            <div class="name">
+                                <label for="lname">Last Name *</label>
+                                <input type="text" id="lname" name="name" placeholder="Last Name" required>
+                            </div>
                         </div>
+    
+                        <div class="input-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" placeholder="Email Address" required>
+                        </div>
+    
+                        <div class="input-group">
+                            <label for="contact">Contact no *</label>
+                            <input type="email" id="contact" name="email" placeholder="Contact detail" required>
+                        </div>
+    
+                        <div class="input-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" placeholder="What would you like us to work on together?" required></textarea>
+                        </div>
+    
+                        <button class="submit-btn" id="submit-button" type="submit">Send Message</button>
+                    </form>
+                    <div class="success hidden">
+                        <h3 class="success-message">Message Sent Successfully <i class="fas fa-check"></i>
+                        </h3>
                     </div>
-
-                    <div>
-                        <label for="email">Email *</label>
-                        <input type="email" id="email" name="email" placeholder="Email Address" required>
-                    </div>
-
-                    <div>
-                        <label for="contact">Contact no *</label>
-                        <input type="email" id="contact" name="email" placeholder="Contact detail" required>
-                    </div>
-
-                    <div>
-                        <label for="message">Message *</label>
-                        <textarea id="message" name="message" placeholder="What would you like us to work on together?" required></textarea>
-                    </div>
-
-                    <button class="submit-btn" id="submit-button" type="submit">Send Message</button>
-                </form>
-            </div>
+                </div>
         </section>
     </main>
 
