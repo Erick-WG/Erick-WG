@@ -73,11 +73,11 @@
                             contactButton.textContent = 'Send Message';
                         }, 1000);
                     }, (error) => {
-                        console.log('FAILED...', error);
+                        // console.log('FAILED...', error);
                         contactButton.classList.remove('loading');
                         contactButton.textContent = 'Error! Try Again';
 
-                        // Reset back after 4s
+                        // Reset back after false
                         setTimeout(() => {
                             contactButton.disabled = false;
                             contactButton.textContent = 'Send Message';
@@ -96,9 +96,10 @@
         <!-- Desktop Nav -->
         <nav class="desktop-nav">
             <ul class="nav-links">
-                <li><a href="./index.html">About Me</a></li>
-                <li><a href="./index.html#projects">My Projects</a></li>
-                <li><a href="./contact.html">Contact Me</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html#profile">About</a></li>
+                <li><a href="./index.html#projects">Projects</a></li>
+                <li><a href="./contact.html" class="contact-button">Contact Me</a></li>
             </ul>
         </nav>
 
