@@ -174,7 +174,12 @@
     
                         <div class="input-group">
                             <label for="contact">Contact no *</label>
-                            <input type="email" id="contact" name="email" placeholder="Contact detail" required>
+                            <input type="tel" 
+                                id="contact"
+                                name="contact"
+                                placeholder="Format: +123456789"
+                                required
+                                pattern="^\+\d{10,15}$">
                         </div>
     
                         <div class="input-group">
